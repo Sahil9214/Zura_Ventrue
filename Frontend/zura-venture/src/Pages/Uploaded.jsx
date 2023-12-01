@@ -19,7 +19,7 @@ import {
   CreateProjectFiles,
   fetchProjectFiles,
 } from "../Redux/projectsFiles/projectFiles.action";
-import SampleProject from "./SampleProject";
+import SampleProject from "./SampleProjectPage";
 import { useParams } from "react-router-dom";
 import CommonModal from "./Create/Component/CommonModal";
 

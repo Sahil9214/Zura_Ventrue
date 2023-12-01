@@ -1,5 +1,5 @@
 import React from "react";
-import { SideBar } from "../Components/SideBar";
+import { SideBar } from "../Components/SideBarValue";
 
 const Upload = () => {
   return (

@@ -13,7 +13,7 @@ import { ModalwithoutProject } from "../Create/Component/ModalwithoutProject";
 import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../../Components/Navbar";
 import { fetchProjects } from "../../Redux/projects/projects.action";
-import Projects from "../Projects";
+import Projects from "../ProjectsPage";
 
 const Home = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

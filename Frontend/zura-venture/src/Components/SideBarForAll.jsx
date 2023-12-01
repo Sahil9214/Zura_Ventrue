@@ -23,12 +23,11 @@ import {
 } from "@chakra-ui/react";
 import { FiBell, FiChevronDown, FiMenu } from "react-icons/fi";
 import logo from "../images/logo.png";
-import Widget from "../Pages/Widget";
-import Deployment from "../Pages/Deployment";
-import Pricing from "../Pages/Pricing";
+import Widget from "../Pages/WPage";
+import Deployment from "../Pages/DeploymentFile";
+import Pricing from "../Pages/PricingPage";
 import settings from "../images/settings.png";
-import Edit from "../Pages/Edit/Edit";
-
+import Edit from "../Pages/Edit/EditPageWidget";
 
 const LinkItems = [
   { name: "Projects", path: "/uploaded" },
@@ -88,10 +87,8 @@ const SidebarContent = ({ onClose, setPageOpen, pageOpen, ...rest }) => {
           </NavItem>
         ))}
         <Flex align="center" p="4" mx="4" marginTop={"120px"}>
-        <Image src={settings}>
-        </Image>
-        <Text color={"rgba(73, 69, 79, 1)"}>Settings</Text>
-
+          <Image src={settings}></Image>
+          <Text color={"rgba(73, 69, 79, 1)"}>Settings</Text>
         </Flex>
       </Box>
     </>
@@ -245,7 +242,7 @@ export const SideBarForAll = () => {
       <MobileNav display={{ base: "flex", md: "none" }} onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="4">
         {pageOpen === "Projects" ? (
-          <Edit/>
+          <Edit />
         ) : pageOpen === "Widget" ? (
           <Widget />
         ) : pageOpen === "Deployment" ? (
@@ -253,7 +250,7 @@ export const SideBarForAll = () => {
         ) : pageOpen === "Pricing" ? (
           <Pricing />
         ) : (
-          <Edit/>
+          <Edit />
         )}
       </Box>
     </Box>
