@@ -1,7 +1,7 @@
 import { Heading } from '@chakra-ui/react'
 import React from 'react'
 
-const Deployment = () => {
+const DeploymentFile = () => {
   return (
     <div>
            <Heading textAlign={"center"}>Deployment</Heading>
@@ -9,4 +9,4 @@ const Deployment = () => {
   )
 }
 
-export default Deployment
+export default DeploymentFile

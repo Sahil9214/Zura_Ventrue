@@ -1,7 +1,7 @@
 import { Heading } from '@chakra-ui/react'
 import React from 'react'
 
-const Widget = () => {
+const WPage = () => {
   return (
     <div>
            <Heading textAlign={"center"}>Widget</Heading>
@@ -9,4 +9,4 @@ const Widget = () => {
   )
 }
 
-export default Widget
+export default WPage

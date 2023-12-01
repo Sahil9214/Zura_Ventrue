@@ -1,7 +1,7 @@
 import React from "react";
 import { SideBar } from "../Components/SideBarValue";
 
-const Upload = () => {
+const uploadingFilePage = () => {
   return (
     <div>
       <SideBar/>
@@ -9,4 +9,4 @@ const Upload = () => {
   );
 };
 
-export default Upload;
+export default uploadingFilePage;

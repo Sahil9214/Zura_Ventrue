@@ -1,7 +1,7 @@
 import { Heading } from '@chakra-ui/react'
 import React from 'react'
 
-const Pricing = () => {
+const PricingPage = () => {
   return (
     <div>
         <Heading textAlign={"center"}>Pricing</Heading>
@@ -9,4 +9,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing
+export default PricingPage

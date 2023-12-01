@@ -65,45 +65,5 @@ export const CreateProjectFiles =
     }
   };
 
-//Update ProjectFiles
-export const updateProjectFile =
-  ({ description, id }) =>
-  async (dispatch) => {
-    try {
-      await fetch(
-        `https://gold-wide-eyed-rabbit.cyclic.app/projectfile/update/${id}`,
-        {
-          method: "PATCH",
-          body: JSON.stringify({ description }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
 
-      await dispatch(fetchProjectFiles(id));
-    } catch (error) {
-      console.error("Error during fetch:", error.message);
-    }
-  };
 
-//Delete ProjectFiles
-export const deleteProjectFile =
-  ({ id, project_id }) =>
-  async (dispatch) => {
-    try {
-      await fetch(
-        `https://gold-wide-eyed-rabbit.cyclic.app/projectfile/delete/${id}`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      await dispatch(fetchProjectFiles(project_id));
-    } catch (error) {
-      console.error("Error during fetch:", error.message);
-    }
-  };
